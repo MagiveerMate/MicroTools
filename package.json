@@ -3,5 +3,5 @@
   "private": true,
   "version": "0.1.0",
   "workspaces": ["apps/*", "services/*", "packages/*"],
-  "scripts": {"mobile": "npm --workspace apps/mobile start", "api": "npm --workspace services/api dev", "typecheck": "npm -ws run typecheck --if-present"}
+  "scripts": {"mobile": "npm --workspace apps/mobile start", "api": "npm --workspace services/api dev", "typecheck": "npm --workspaces run typecheck --if-present"}
 }
