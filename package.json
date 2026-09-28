@@ -2,6 +2,18 @@
   "name": "microtools",
   "private": true,
   "version": "0.1.0",
-  "workspaces": ["apps/*", "services/*", "packages/*"],
-  "scripts": {"mobile": "npm --workspace apps/mobile start", "api": "npm --workspace services/api dev", "typecheck": "npm --workspaces run typecheck --if-present"}
+  "workspaces": [
+    "apps/*",
+    "services/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "mobile": "npm --workspace apps/mobile start",
+    "api": "npm --workspace services/api dev",
+    "typecheck": "npm --workspaces run typecheck --if-present"
+  },
+  "overrides": {
+    "postcss": "^8.5.28",
+    "uuid": "^11.1.1"
+  }
 }
